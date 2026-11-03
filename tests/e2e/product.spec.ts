@@ -212,8 +212,11 @@ test('benchmarks expose measured artifacts and missing assets remain 404', async
 test('Storybook loads under its prefix and interactive stories use shared components', async ({
   page,
 }) => {
-  await page.goto('/storybook/');
-  await expect(page.locator('#storybook-explorer-tree')).toBeVisible({ timeout: 30000 });
+  for (const path of ['/storybook', '/storybook/', '/storybook/index.html']) {
+    const response = await page.goto(path);
+    expect(response?.status()).toBe(200);
+    await expect(page.locator('#storybook-explorer-tree')).toBeVisible({ timeout: 30000 });
+  }
   await page.goto('/storybook/iframe.html?id=actions-button--primary&viewMode=story');
   await expect(page.getByRole('button', { name: 'Run simulation', exact: true })).toBeVisible({
     timeout: 30000,

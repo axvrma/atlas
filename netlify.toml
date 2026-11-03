@@ -6,11 +6,9 @@
   PNPM_VERSION = "10.10.0"
   STORYBOOK_DISABLE_TELEMETRY = "1"
   DO_NOT_TRACK = "1"
-[[redirects]]
-  from = "/storybook"
-  to = "/storybook/"
-  status = 301
-  force = true
+# Netlify normalizes trailing slashes before matching redirect rules.
+# Let its directory-index / Pretty URLs handling serve Storybook; a forced
+# /storybook -> /storybook/ redirect matches its own destination and loops.
 [[redirects]]
   from = "/storybook/*"
   to = "/storybook/404.html"

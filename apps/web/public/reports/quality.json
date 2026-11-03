@@ -1,12 +1,12 @@
 {
   "unit": {
-    "passed": 34,
+    "passed": 36,
     "failed": 0,
-    "total": 34
+    "total": 36
   },
-  "generatedAt": "2026-11-03T08:25:09.384Z",
-  "coverageMeasuredAt": "2026-11-03T08:05:20.423Z",
-  "browserMeasuredAt": "2026-11-03T08:25:08.994Z",
+  "generatedAt": "2026-11-03T08:46:30.519Z",
+  "coverageMeasuredAt": "2026-11-03T08:45:21.404Z",
+  "browserMeasuredAt": "2026-11-03T08:45:06.926Z",
   "coverage": {
     "lines": {
       "total": 409,
@@ -44,7 +44,7 @@
     "failed": 0,
     "flaky": 0,
     "skipped": 0,
-    "durationMs": 31680.68
+    "durationMs": 30764.348
   },
   "scope": "Coverage: engine, shared UI, storage adapter. Browser: Chromium against the assembled static artifact, including representative light/dark axe checks. Not a complete WCAG audit."
 }

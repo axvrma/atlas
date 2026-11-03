@@ -119,7 +119,7 @@ Use one Netlify site. Root `netlify.toml` provides:
 - Publish: `dist`
 - Node: `22.22.0`; pnpm: `10.10.0`
 - No application environment variables or credentials
-- Existing static files before SPA fallbacks; clean `/storybook` → `/storybook/` redirect
+- Existing static files before SPA fallbacks; Netlify handles the Storybook directory URL without a custom slash redirect
 - Security headers and immutable caching for hashed assets
 
 See [exact manual hosting/domain steps](docs/deployment/netlify.md). No deployment or external infrastructure modifications were authorized or performed.
