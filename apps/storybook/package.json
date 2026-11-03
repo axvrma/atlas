@@ -1,0 +1,24 @@
+{
+  "name": "@atlas/storybook",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build --output-dir storybook-static"
+  },
+  "dependencies": {
+    "@atlas/ui": "workspace:*",
+    "@atlas/tokens": "workspace:*",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "lucide-react": "^0.563.0",
+    "@atlas/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "storybook": "10.6.5",
+    "@storybook/react-vite": "10.6.5",
+    "@storybook/addon-docs": "10.6.5",
+    "@storybook/addon-a11y": "10.6.5"
+  }
+}

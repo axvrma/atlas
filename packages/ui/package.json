@@ -1,0 +1,20 @@
+{
+  "name": "@atlas/ui",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.tsx"
+  },
+  "dependencies": {
+    "@atlas/contracts": "workspace:*",
+    "@atlas/tokens": "workspace:*",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-popover": "^1.1.15",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "lucide-react": "^0.563.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  }
+}

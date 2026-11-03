@@ -1,0 +1,50 @@
+{
+  "unit": {
+    "passed": 34,
+    "failed": 0,
+    "total": 34
+  },
+  "generatedAt": "2026-11-03T08:25:09.384Z",
+  "coverageMeasuredAt": "2026-11-03T08:05:20.423Z",
+  "browserMeasuredAt": "2026-11-03T08:25:08.994Z",
+  "coverage": {
+    "lines": {
+      "total": 409,
+      "covered": 299,
+      "skipped": 0,
+      "pct": 73.1
+    },
+    "statements": {
+      "total": 452,
+      "covered": 334,
+      "skipped": 0,
+      "pct": 73.89
+    },
+    "functions": {
+      "total": 163,
+      "covered": 87,
+      "skipped": 0,
+      "pct": 53.37
+    },
+    "branches": {
+      "total": 442,
+      "covered": 327,
+      "skipped": 0,
+      "pct": 73.98
+    },
+    "branchesTrue": {
+      "total": 0,
+      "covered": 0,
+      "skipped": 0,
+      "pct": 100
+    }
+  },
+  "browser": {
+    "passed": 23,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 0,
+    "durationMs": 31680.68
+  },
+  "scope": "Coverage: engine, shared UI, storage adapter. Browser: Chromium against the assembled static artifact, including representative light/dark axe checks. Not a complete WCAG audit."
+}

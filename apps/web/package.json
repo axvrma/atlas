@@ -1,0 +1,24 @@
+{
+  "name": "@atlas/web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@atlas/core": "workspace:*",
+    "@atlas/contracts": "workspace:*",
+    "@atlas/mock-data": "workspace:*",
+    "@atlas/ui": "workspace:*",
+    "@atlas/tokens": "workspace:*",
+    "@xyflow/react": "12.12.1",
+    "@dagrejs/dagre": "^1.1.8",
+    "idb": "^8.0.3",
+    "lucide-react": "^0.563.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-router-dom": "^7.13.0"
+  }
+}

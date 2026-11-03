@@ -1,0 +1,49 @@
+[build]
+  command = "corepack enable && pnpm install --frozen-lockfile && pnpm build"
+  publish = "dist"
+[build.environment]
+  NODE_VERSION = "22.22.0"
+  PNPM_VERSION = "10.10.0"
+  STORYBOOK_DISABLE_TELEMETRY = "1"
+  DO_NOT_TRACK = "1"
+[[redirects]]
+  from = "/storybook"
+  to = "/storybook/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/storybook/*"
+  to = "/storybook/404.html"
+  status = 404
+[[redirects]]
+  from = "/assets/*"
+  to = "/404.html"
+  status = 404
+[[redirects]]
+  from = "/reports/*"
+  to = "/404.html"
+  status = 404
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
+[[headers]]
+  for = "/storybook/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/storybook/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-11-03T08:24:30.709Z",
+  "environment": "Node v22.22.0 · darwin arm64 · Apple M1 Pro",
+  "samples": 30,
+  "methodology": "5 warm-up runs, 30 sequential timed samples; valid linear graph, small flat payload; simulation includes validation and trace cloning.",
+  "results": [
+    {
+      "nodes": 10,
+      "validationMedianMs": 0.0916249999999934,
+      "validationP95Ms": 0.32595799999998576,
+      "simulationMedianMs": 0.2153329999999869,
+      "simulationP95Ms": 0.3207089999999937
+    },
+    {
+      "nodes": 50,
+      "validationMedianMs": 0.30741699999998673,
+      "validationP95Ms": 0.5089169999999967,
+      "simulationMedianMs": 0.7856669999999895,
+      "simulationP95Ms": 1.0183749999999918
+    },
+    {
+      "nodes": 100,
+      "validationMedianMs": 0.22387499999996407,
+      "validationP95Ms": 0.43858399999999165,
+      "simulationMedianMs": 1.3684170000000222,
+      "simulationP95Ms": 1.7651670000000195
+    },
+    {
+      "nodes": 250,
+      "validationMedianMs": 0.5645410000000197,
+      "validationP95Ms": 0.8150830000000155,
+      "simulationMedianMs": 3.1792089999999575,
+      "simulationP95Ms": 3.611083000000008
+    }
+  ]
+}

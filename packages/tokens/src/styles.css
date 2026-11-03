@@ -1,0 +1,152 @@
+:root {
+  color-scheme: light;
+  --bg: #f8f9fc;
+  --surface: #fff;
+  --surface-hover: #f4f3fb;
+  --subtle: #f3f4f8;
+  --text: #242639;
+  --muted: #62687d;
+  --border: #e7e8f0;
+  --brand: #6747d7;
+  --brand-hover: #5536c2;
+  --brand-soft: #f0ebff;
+  --green: #247656;
+  --green-soft: #e9f6ef;
+  --red: #b93b50;
+  --red-soft: #fff0f1;
+  --amber: #94601c;
+  --amber-soft: #fff6e5;
+  --blue: #3569b0;
+  --blue-soft: #eaf1ff;
+  --purple: #7950c2;
+  --purple-soft: #f2ebff;
+  --slate: #626d85;
+  --slate-soft: #edf0f6;
+  --shadow: 0 8px 32px #25224308;
+  --radius: 10px;
+  --font: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+}
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #13151e;
+  --surface: #1b1e2a;
+  --surface-hover: #262534;
+  --subtle: #222534;
+  --text: #edeef7;
+  --muted: #a4abc2;
+  --border: #303446;
+  --brand: #b19afa;
+  --brand-hover: #c5b1ff;
+  --brand-soft: #302746;
+  --green: #84d6ac;
+  --green-soft: #20382e;
+  --red: #ff9bab;
+  --red-soft: #432630;
+  --amber: #e9be78;
+  --amber-soft: #3f3322;
+  --blue: #94bafa;
+  --blue-soft: #25344d;
+  --purple: #c3a3ff;
+  --purple-soft: #34294a;
+  --slate: #b0bdd7;
+  --slate-soft: #2d3345;
+  --shadow: 0 8px 32px #0002;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--brand);
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  font-weight: 650;
+  letter-spacing: -0.035em;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 23px;
+}
+h3 {
+  font-size: 16px;
+}
+p {
+  color: var(--muted);
+}
+svg {
+  flex-shrink: 0;
+}
+button {
+  color: inherit;
+}
+::selection {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 3px;
+}
+pre,
+code,
+kbd {
+  font-family: var(--mono);
+}
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  line-height: 1.8;
+}
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 20px 0;
+}

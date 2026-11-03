@@ -1,0 +1,8 @@
+{
+  "name": "@atlas/config",
+  "private": true,
+  "version": "1.0.0",
+  "exports": {
+    "./tsconfig.json": "./tsconfig.json"
+  }
+}
