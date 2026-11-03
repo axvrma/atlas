@@ -16,7 +16,7 @@
     "@xyflow/react": "12.12.1",
     "@dagrejs/dagre": "^1.1.8",
     "idb": "^8.0.3",
-    "lucide-react": "^0.563.0",
+    "lucide-react": "^1.66.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-router-dom": "^7.13.0"
