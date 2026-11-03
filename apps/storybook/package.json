@@ -10,8 +10,8 @@
   "dependencies": {
     "@atlas/ui": "workspace:*",
     "@atlas/tokens": "workspace:*",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "lucide-react": "^0.563.0",
     "@atlas/contracts": "workspace:*"
   },
