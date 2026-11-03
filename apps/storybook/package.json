@@ -12,7 +12,7 @@
     "@atlas/tokens": "workspace:*",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "lucide-react": "^0.563.0",
+    "lucide-react": "^1.66.0",
     "@atlas/contracts": "workspace:*"
   },
   "devDependencies": {
